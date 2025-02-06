@@ -94,7 +94,7 @@ namespace CRUD_PRODUCTS.Storage
             using(var connection = db.GetConnection())
             {
                 connection.Open();
-                var command = new MySqlCommand("DELETE FROM ProductDB WHERE ID = @ID",connection);
+                var command = new MySqlCommand("UPDATE Products SET ATIVO = false WHERE ID = @ID;",connection);
                 command.Parameters.AddWithValue("@ID", id);
                 var ret = command.ExecuteNonQuery();
                 if (ret != 0)

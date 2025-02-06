@@ -56,3 +56,4 @@
 /home/dev-michel/Documentos/Projetos/CRUD_PRODUCTS/obj/Debug/net9.0/CRUD_PRODUCTS.pdb
 /home/dev-michel/Documentos/Projetos/CRUD_PRODUCTS/obj/Debug/net9.0/CRUD_PRODUCTS.genruntimeconfig.cache
 /home/dev-michel/Documentos/Projetos/CRUD_PRODUCTS/obj/Debug/net9.0/ref/CRUD_PRODUCTS.dll
+/home/dev-michel/Documentos/Projetos/CRUD_PRODUCTS/obj/Debug/net9.0/CRUD_PRODUCTS.sourcelink.json

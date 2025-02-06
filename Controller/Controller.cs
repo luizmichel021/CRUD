@@ -44,12 +44,19 @@ namespace CRUD_PRODUCTS.Controller
         }
 
 
-        [HttpPut]
+        [HttpPut("{id}")]
         public IActionResult Update(Product product)
         {
            _service.Update(product);
             return Ok(GetById(product.Id));
 
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            _service.DeleteProduct(id);
+            return Ok();
         }
     }
 }

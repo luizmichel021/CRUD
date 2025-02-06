@@ -81,6 +81,20 @@ namespace CRUD_PRODUCTS.service
                 _logger.LogError(e ,"[Service] - Exception during update a product. Error : {Exception}", e.Message);
             }
         }
+
+        public void DeleteProduct(int id)
+        {   
+            _logger.LogDebug("[Service] - Trying to delete a Product.");
+            try
+            {
+                storage.DeleteProduct(id);
+                _logger.LogInformation("[Service] - Product delet success.");
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e,"[Service] - Erro to delet a products. ERROR {Exception} ", e.Message);
+            }
+        }
     }; 
 
 

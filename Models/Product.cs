@@ -35,7 +35,7 @@ namespace CRUD_PRODUCTS.Models
 
     
 
-        public Product(){}
+        public Product(){} //MEMORIA RHEAP - STACK
         public Product(string nome, double preco, int quantidade)
         {
             Nome = nome;
